@@ -1,6 +1,6 @@
 import scrapy
 
-# inherit the class
+# inherit the class that will scrape the data
 class myScraper(scrapy.Spider):
     # name for the scraper
     name = 'mycrawler'
