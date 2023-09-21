@@ -6,7 +6,7 @@ class myScraper(scrapy.Spider):
     name = 'mycrawler'
     start_urls = ['https://quotes.toscrape.com/']
 
-# define module/function
+# define the function that will retrieve the data for the quotes
     def parse(self, response):
         authors = response.css("small.author::text").extract()
         quotes = response.css("span.text::text").extract()
