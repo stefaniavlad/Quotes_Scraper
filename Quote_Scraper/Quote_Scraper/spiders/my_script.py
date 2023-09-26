@@ -1,6 +1,6 @@
 import scrapy
 
-# inherit the class that will scrape the data
+# inherit the class that will scrape the data from the site and get the quotes, authors and tags
 class myScraper(scrapy.Spider):
     # name for the scraper
     name = 'mycrawler'
